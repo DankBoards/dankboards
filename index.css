@@ -1,0 +1,202 @@
+body{
+	background:#000;
+	color:#fff!important;
+	font-family:verdana;
+}
+
+h1{
+	margin:0;
+	padding:0;
+}
+#logo{
+	width:50%;
+	float:left;
+}
+
+header{
+	padding:0 0 20px 0;
+}
+
+#userinfo{
+	width:50%;
+	float:left;
+	border:1px solid #1F1F1F; 
+	box-sizing:border-box;
+	border-radius:10px;
+	padding:10px;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+#posts div{
+	background:#111;
+	border:1px solid #222;
+	word-wrap:break-word;
+}
+#posts div div{
+	background:#111;
+	border:0;
+}
+
+.content .avatar{
+    max-width: 50px;
+    display: block;
+    float: left;
+}
+
+.användare{
+    padding: 15px;
+    display: block;
+    float: left;
+}
+
+
+main{
+	width:1000px;
+	margin:0 auto;
+	padding:20px;
+	background:#0F0F0F;
+	border-radius:5px;
+	box-sizing:border-box;
+}
+
+#posts h2{
+	padding:5px;
+	margin:0;
+	background:#553ff2;
+	color:#FFF;
+}
+
+input{
+	display:block;
+	width:100%;
+	box-sizing:border-box;
+	background:#333;
+	border:0;
+	padding:10px;
+	text-align:left;
+	color:#999;
+}
+textarea{
+	display:block;
+	width:100%;
+	box-sizing:border-box;
+	background:#333;
+	border:0;
+	padding:10px;
+	text-align:left;
+	color:#999;
+	max-width:100%;
+	height:300px;
+}
+
+.content{
+	padding:20px;
+}
+
+a{
+	color: #DDD;
+}
+
+
+
+
+/*
+	body{
+	background:#000;
+	color:#fff!important;
+	font-family:verdana;
+}
+
+h1{
+	margin:0;
+	padding:0;
+}
+#logo{
+	width:50%;
+	float:left;
+}
+
+header{
+	padding:0 0 20px 0;
+}
+
+#userinfo{
+	width:50%;
+	float:left;
+	border:1px solid #1F1F1F; 
+	box-sizing:border-box;
+	border-radius:10px;
+	padding:10px;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+#posts div{
+	background:#111;
+	border:1px solid #222;
+}
+#posts div div{
+	background:#111;
+	border:0;
+}
+
+main{
+	width:1000px;
+	margin:0 auto;
+	padding:20px;
+	background:#0F0F0F;
+	border-radius:5px;
+	box-sizing:border-box;
+}
+
+#posts h2{
+	padding:5px;
+	margin:0;
+	background:#222;
+	color:#FFF;
+}
+
+input{
+	display:block;
+	width:100%;
+	box-sizing:border-box;
+	background:#333;
+	border:0;
+	padding:10px;
+	text-align:left;
+	color:#999;
+}
+textarea{
+	display:block;
+	width:100%;
+	box-sizing:border-box;
+	background:#333;
+	border:0;
+	padding:10px;
+	text-align:left;
+	color:#999;
+	max-width:100%;
+	height:300px;
+}
+
+.content{
+	padding:20px;
+}
+
+a{
+	color: #DDD;
+}
+*/
