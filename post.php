@@ -32,7 +32,20 @@
 				$user = $rad2['username'];
 				$avatar = $rad2['avatar'];
 				
-				echo '' . '<div class="post"><a href="?post="' . $id . '"><h2>'. $rubrik .'</h2></a><div class="content"><span class="användare">Av användare: '. $user .'</span><p class="contentPost">'. $content .'</p><span class="datum">Skapades: '. $date .'</span></div></div><br>';
+				echo '' . '
+				<div class="post">
+					<a href="?post="' . $id . '"><h2>'. $rubrik .'</h2></a>
+					<div class="content clearfix">
+						<div class="left">
+							<span class="användare">Av användare: '. $user .'</span>
+						</div>
+						<div class="right">
+							<p class="contentPost">'. $content .'</p>
+							<span class="datum">Skapades: '. $date .'</span>
+						</div>
+					</div>
+				</div>
+				<br>';
 			
 			}
 			

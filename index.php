@@ -10,7 +10,7 @@
 	
 	include('header.php');
 	
-	//error_reporting(0);
+	error_reporting(0);
 	if(isset($_GET['action']) && $_GET['action']==home){
 		include('home.php');
 	} else if ($_GET['action']==login){
