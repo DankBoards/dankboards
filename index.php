@@ -21,6 +21,8 @@
 		include('create.php');
 	} else if ($_GET['post']!=""){
 		include('post.php');
+	} else if ($_GET['profile']!=""){
+		include('profile.php');
 	} else {
 		include('home.php');
 	}

@@ -34,18 +34,18 @@
 				
 				echo '' . '
 				<div class="post">
-					<a href="?post="' . $id . '"><h2>'. $rubrik .'</h2></a>
+					<h2>'. $rubrik .'</h2>
 					<div class="content clearfix">
 						<div class="left">
-							<span class="användare">Av användare: '. $user .'</span>
+							<span class="postbit"><p>'. $user .'</p></span>
+							<span class="postbit"><img src="'. $avatar .'"/></span>
 						</div>
 						<div class="right">
 							<p class="contentPost">'. $content .'</p>
-							<span class="datum">Skapades: '. $date .'</span>
 						</div>
 					</div>
-				</div>
-				<br>';
+					<div class="below"><span class="datum">Skapades: '. $date .'</span></div>
+				</div>';
 			
 			}
 			
@@ -68,8 +68,5 @@
 	//Stäng anslutningen.
 	mysqli_close($conn);
 	
-	if (isset($_SESSION["username"])){
-	echo '<br><br><a href="index.php?action=create">Skapa nytt inlägg!</a>';
-	} else {
-	}
+
 ?>

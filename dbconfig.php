@@ -1,6 +1,5 @@
 <?php
 	
-
 	//Här är hosten, som är ip addressen till mysql servern. Detta kan också vara localhost som är den lokala datorn.
 	$host = "localhost";
 	//Här är användarnamnet för att connecta till localhosts mysql server.

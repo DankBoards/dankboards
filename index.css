@@ -8,6 +8,16 @@ h1{
 	margin:0;
 	padding:0;
 }
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	box-sizing:border-box;
+	text-decoration:underline;
+}
+
 #logo{
 	width:50%;
 	float:left;
@@ -34,14 +44,11 @@ header{
    clear: both;
 }
 
-#posts div{
+
+.post{
 	background:#111;
 	border:1px solid #222;
 	word-wrap:break-word;
-}
-#posts div div{
-	background:#111;
-	border:0;
 }
 
 .content .avatar{
@@ -77,6 +84,32 @@ header{
 	float:left;
 }
 
+.postbit{
+	display:inline-block;
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.postbit p{
+	margin:0 auto;
+	display:table;
+}
+
+.postbit img{
+	width:100px;
+	margin:0 auto;
+	display:block;
+	border-radius:50%;
+	border:3px solid #369;
+}
+
+.below{
+	padding:10px;
+	box-sizing:border-box;
+	border-top:1px solid #222;
+}
+
 p{
 	margin:0;
 }
@@ -93,7 +126,7 @@ main{
 #posts h2{
 	padding:5px;
 	margin:0;
-	background:#553ff2;
+	background:#336699;
 	color:#FFF;
 }
 
@@ -121,7 +154,6 @@ textarea{
 }
 
 .content{
-	padding:20px;
 }
 
 a{
