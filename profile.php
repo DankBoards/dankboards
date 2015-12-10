@@ -16,7 +16,7 @@
 			if ($rad['email']!=""){
 				$email = $rad['email'];
 			} else {
-				
+				$email = "No set email."
 			}
 			
 			echo '<img src="'.$avatar.'" /><br>';
