@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Värd: 127.0.0.1
--- Tid vid skapande: 10 dec 2015 kl 10:23
+-- Tid vid skapande: 10 dec 2015 kl 10:29
 -- Serverversion: 5.6.16
 -- PHP-version: 5.5.11
 
@@ -19,6 +19,32 @@ SET time_zone = "+00:00";
 --
 -- Databas: `forum`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `inlagg`
+--
+
+CREATE TABLE IF NOT EXISTS `inlagg` (
+  `id` int(25) NOT NULL AUTO_INCREMENT,
+  `rubrik` varchar(128) CHARACTER SET latin1 NOT NULL,
+  `userid` int(25) NOT NULL,
+  `content` varchar(512) CHARACTER SET latin1 NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf16 COLLATE=utf16_swedish_ci AUTO_INCREMENT=27 ;
+
+--
+-- Dumpning av Data i tabell `inlagg`
+--
+
+INSERT INTO `inlagg` (`id`, `rubrik`, `userid`, `content`, `date`) VALUES
+(22, 'Potatis', 1, 'Cheeseburgare med ost!', '1899-11-30 00:00:01'),
+(23, 'Potatis', 1, 'Cheeseburgare oster!', '0000-00-00 00:00:00'),
+(24, 'Potatis', 1, 'Cheeseburgare oster!', '0000-00-00 00:00:00'),
+(25, 'test', 12, 'test', '2015-12-08 10:07:38'),
+(26, 'Kollar om inlÃ¤gg funkar!', 12, 'Hejsan testar bara detta, ska se om datum och tid stÃ¤mmer samt lÃ¤gger upp rÃ¤tt saker till databaser.\r\n\r\n#1', '2015-12-08 10:09:31');
 
 -- --------------------------------------------------------
 
