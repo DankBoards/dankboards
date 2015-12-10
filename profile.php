@@ -11,10 +11,20 @@
 			$avatar = $rad["avatar"];
 			$username = $rad['username'];
 			$profileid = $rad['id'];
+			$usergroup = $rad['usergroup'];
+			$regdate = $rad['regdate'];
+			if ($rad['email']!=""){
+				$email = $rad['email'];
+			} else {
+				
+			}
 			
 			echo '<img src="'.$avatar.'" /><br>';
 			echo '<p>'.$username.'</p>';
 			echo '<p>'.$profileid.'</p>';
+			echo '<p>'.$usergroup.'</p>';
+			echo '<p>'.$regdate.'</p>';
+			echo '<p>'.$email.'</p>';
 		}
 	}
 	
