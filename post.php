@@ -4,9 +4,9 @@
 	
 	session_start();
 	
-	?>	
-	<div id="posts">
-	<?php
+?>	
+<div id="posts">
+<?php
 	
 	$sql = "SELECT * FROM inlagg";
 	
@@ -68,5 +68,4 @@
 	//Stäng anslutningen.
 	mysqli_close($conn);
 	
-
 ?>

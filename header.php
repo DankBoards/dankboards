@@ -1,10 +1,13 @@
-	<header>
-		<div id="logo">
-			<a href="index.php?action=home"><h1>Hemsida.</h1></a>
-		</div>
-		<div id="userinfo">
+<header>
+	<div id="logo">
+		<a href="index.php?action=home">
+			<h1>Hemsida.</h1>
+		</a>
+	</div>
+	<div id="userinfo">
+	
+		<?php
 		
-			<?php
 			session_start();
 			
 			if (isset($_SESSION["id"])){
@@ -12,8 +15,9 @@
 			} else {
 				echo '<a href="index.php?action=login">Logga in</a>/<a href="index.php?action=register">Register</a><br/>';
 			}
-			?>
-		
-		</div>
-		<span class="clearfix"/>
-	</header>
+			
+		?>
+	
+	</div>
+	<span class="clearfix"/>
+</header>
