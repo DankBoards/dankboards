@@ -1,7 +1,7 @@
 body{
 	background:#000;
 	color:#fff!important;
-	font-family:verdana;
+	font-family: sans-serif;
 }
 
 h1{
@@ -51,6 +51,29 @@ header{
 	word-wrap:break-word;
 }
 
+.shortPost{
+	background:#111;
+	border:1px solid #222;
+	word-wrap:break-word;
+	position:relative;
+}
+
+.shortPost .content{
+	padding:10px;
+}
+
+
+.shortPost .content .användare{
+	padding:0;
+}
+
+.shortPost .datum{
+	padding:10px;
+	border-top: 1px solid #222;
+	display:block;
+	position:relative;
+}
+
 .content .avatar{
     max-width: 50px;
     display: block;
@@ -58,9 +81,8 @@ header{
 }
 
 .användare{
-    padding: 15px;
-    display: block;
-    float: left;
+	position:absolute;
+	right:10px;
 	box-sizing:border-box;
 }
 
@@ -74,14 +96,12 @@ header{
 	width:30%;
 	padding:15px;
 	box-sizing:border-box;
-	float:left;
 }
 
 .post .content .right{
 	width:70%;
 	padding:15px;
 	box-sizing:border-box;
-	float:left;
 }
 
 .postbit{
@@ -102,6 +122,65 @@ header{
 	display:block;
 	border-radius:50%;
 	border:3px solid #369;
+}
+
+.profileBit{
+	display:inline-block;
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.profileBit p{
+	margin:0 auto;
+	display:table;
+}
+
+.profileBit img{
+	width:100px;
+	margin:0 auto;
+	display:block;
+	border-radius:50%;
+	border:3px solid #369;
+}
+
+.profileLeft{
+	width:30%;
+	background:#151515;
+}
+
+.profileRight{
+	width:70%;
+}
+
+.profileTop{
+	height:200px;
+	position:relative;
+}
+
+.profileName{
+	padding:10px;
+	width:100%;
+	font-style:italic;
+	background-color:rgba(255,255,255,0.05);
+	box-sizing:border-box;
+}
+
+.profileImg img{
+    width: 100px;
+    display: block;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: -10px;
+    left: 53px;
+}
+
+.profileWrapper{
+	border:1px solid #222;
+}
+
+.profile{
+	display:flex;
 }
 
 .below{
@@ -153,11 +232,12 @@ textarea{
 	height:300px;
 }
 
-.content{
+.post .content{
+	display:flex;
 }
 
 a{
-	color: #DDD;
+	color: #0083E7;
 }
 
 

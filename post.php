@@ -37,7 +37,7 @@
 					<h2>'. $rubrik .'</h2>
 					<div class="content clearfix">
 						<div class="left">
-							<span class="postbit"><p>'. $user .'</p></span>
+							<span class="postbit"><p><a href="?profile='. $userid .'">'. $user .'</a></p></span>
 							<span class="postbit"><img src="'. $avatar .'"/></span>
 						</div>
 						<div class="right">

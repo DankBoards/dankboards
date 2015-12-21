@@ -35,8 +35,14 @@
 				$rad2 = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM users WHERE id='" . $userid . "'"));
 				$user = $rad2['username'];
 				$avatar = $rad2['avatar'];
-
-				echo '<div class="post"><a href="?post=' . $id . '"><h2>'. $rubrik .'</h2></a><div class="content"><div class="clearfix"><span class="användare">Av användare: '. $user .'</span></div><p class="contentPost">'. $content .'</p><span class="datum">Skapades: '. $date .'</span></div></div><br>';
+				
+				echo '<div class="shortPost">';
+				echo '<a href="?post=' . $id . '"><h2>'. $rubrik .'</h2></a>';
+				echo '<div class="content">';
+				echo '<p class="contentPost">'. $content .'</p>';
+				echo '</div>';
+				echo '<span class="datum">Skapades: '. $date .'<span class="användare">Av användare: <a href="?profile='. $userid .'">'. $user .'</a></span></span>';
+				echo '</div><br>';
 			
 			}
 			
